@@ -28,6 +28,6 @@ export const NewChecklistButton = styled.button`
 
   &:hover {
     background: ${props => props.theme["blue-700"]};
-    transition: background-color 0.2s;
+    transition: background-color 0.5s;
   }
 `;
