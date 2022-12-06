@@ -1,4 +1,4 @@
-export const defaulttheme = {
+export const defaultTheme = {
   'black': '#132a13',
   
   'white-100': '#fff',
@@ -24,8 +24,12 @@ export const defaulttheme = {
   'green-800': '#004b23',
   'green-900': '#132a13',
   
-  'blue-500': '#78c0e0',
-  'blue-600': '#449dd1',
+  'blue-100': '#caf0f8',
+  'blue-200': '#ade8f4',
+  'blue-300': '#90e0ef',
+  'blue-400': '#00b4d8',
+  'blue-500': '#00b4d8',
+  'blue-600': '#0096c7',
   'blue-700': '#192bc2',
   'blue-800': '#150578',
   'blue-900': '#0e0e52',

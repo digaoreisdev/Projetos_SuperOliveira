@@ -6,9 +6,19 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-
+  
   :focus {
     outline: 0;
-    box-shadow: 0 0 0 2px ${props => props.theme}
+    box-shadow: 0 0 0 2px ${props => props.theme["blue-700"]};
+  }
+  
+  body {
+    background-color: ${props => props.theme["blue-500"]};
+    color: ${props => props.theme["gray-100"]};
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body, input, textarea, button {
+    font-family: 400 1rem Roboto, sans-serif;
   }
 `
