@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const SummaryContainer = styled.section`
   width: 100%;
-  max-width: 1120px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 1.5rem;
   
@@ -34,7 +34,7 @@ export const SummaryCard = styled.div<SummaryCardProps>`
     margin-top: 1rem;
     font-size: 2rem;
   }
-
+  
   ${props => props.variant === 'red' && css`
     background: ${props => props.theme["red-400"]};
   `}

@@ -2,6 +2,7 @@ import { ThemeProvider } from "styled-components";
 import { Header } from "./components/Header";
 import { Lines } from "./components/Lines";
 import { Summary } from "./components/Summary";
+import { ChecklistTable } from "./components/table";
 import { GlobalStyle } from "./styles/global";
 import { defaultTheme } from "./styles/themes/default";
 
@@ -15,6 +16,8 @@ export function App() {
       <Lines />
       
       <Summary />
+      
+      <ChecklistTable />
     </ThemeProvider>
   )
 }
