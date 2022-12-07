@@ -1,5 +1,4 @@
-import { TableContainer, TransaciontsTable } from "./styles";
-import { CircleWavyCheck, CircleWavyWarning } from 'phosphor-react';
+import { Status, TableContainer, TransaciontsTable } from "./styles";
 
 export function ChecklistTable() {
   return (
@@ -24,8 +23,7 @@ export function ChecklistTable() {
             <td>03/12/2022 14:38:04</td>
             <td>03/12/2022 15:11:13</td>
             <td>
-              <CircleWavyCheck color="#1ae05c" />
-              Finalizado
+              { <Status statusColor="finished">Finalizado</Status> }
             </td>
           </tr>
           <tr>
@@ -37,10 +35,7 @@ export function ChecklistTable() {
             <td>04/12/2022 16:30:26</td>
             <td>04/12/2022 18:00:30</td>
             <td>
-              <div>
-              <CircleWavyWarning color="#e0211a" />
-              Com Divergências
-              </div>
+              { <Status statusColor="with_disagreements">Com Divergências</Status> }
             </td>
           </tr>
           <tr>
@@ -52,8 +47,7 @@ export function ChecklistTable() {
             <td>06/12/2022 14:00:01</td>
             <td> - </td>
             <td>
-              <CircleWavyWarning color="#f3ef06" />
-              Em Trânsito
+              { <Status statusColor="in_transit">Em trânsito</Status> }
             </td>
           </tr>
         </tbody>

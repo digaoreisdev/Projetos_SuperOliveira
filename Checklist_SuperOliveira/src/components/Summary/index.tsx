@@ -6,27 +6,27 @@ export function Summary() {
     <SummaryContainer>
       <SummaryCard>
         <header>
-          <span>Checkist em Trânsito</span>
+          <span>Checklist em Trânsito</span>
           <ArrowFatLinesRight size={32} color="#f3ef06" />
         </header>
         
-        <strong>04 Checkist</strong>
+        <strong>04 Checklist</strong>
       </SummaryCard>
       <SummaryCard>
         <header>
-          <span>Checkist Finalizados</span>
+          <span>Checklist Finalizados</span>
           <Checks size={32} color="#1ae05c" />
         </header>
         
-        <strong>02 Checkist</strong>
+        <strong>02 Checklist</strong>
       </SummaryCard>
       <SummaryCard variant="red">
         <header>
-          <span>Checkist com Divergências</span>
+          <span>Checklist com Divergências</span>
           <WarningCircle size={32} color="#fff" />
         </header>
         
-        <strong>01 Checkist</strong>
+        <strong>01 Checklist</strong>
       </SummaryCard>
     </SummaryContainer>
   )

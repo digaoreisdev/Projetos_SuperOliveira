@@ -7,11 +7,15 @@ export const TableContainer = styled.main`
   padding: 0 1.5rem;
 `;
 
+interface StatusProps {
+  variant: 'finished' | 'in_transit' | 'with_disagreements';
+};
+
 export const TransaciontsTable = styled.table`
   width: 100%;
   border-collapse: separate;
-  border-spacing: 0 0.1rem;
-  /* margin-top: 1.5rem; */
+  border-spacing: 0 0.3rem;
+  margin-top: -3rem;
   
   th {
     background: ${props => props.theme["gray-800"]};
@@ -30,5 +34,29 @@ export const TransaciontsTable = styled.table`
       border-top-right-radius: 6px;
       border-bottom-right-radius: 6px;
     }
+  }
+`;
+
+const STATUS_COLOR = {
+  finished: 'green-500',
+  in_transit: 'yellow-100',
+  with_disagreements: 'red-400',
+} as const
+
+interface StatusProps {
+statusColor: keyof typeof STATUS_COLOR;
+}
+
+export const Status = styled.span<StatusProps>`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  &::before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background: ${props => props.theme[STATUS_COLOR[props.statusColor]]};
   }
 `;
