@@ -7,10 +7,6 @@ export const TableContainer = styled.main`
   padding: 0 1.5rem;
 `;
 
-interface StatusProps {
-  variant: 'finished' | 'in_transit' | 'with_disagreements';
-};
-
 export const TransaciontsTable = styled.table`
   width: 100%;
   border-collapse: separate;
